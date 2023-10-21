@@ -2,9 +2,7 @@ package com.bader88.erpsol.controller;
 
 import com.bader88.erpsol.dao.UserDao;
 import com.bader88.erpsol.entity.UserEntity;
-import com.bader88.erpsol.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

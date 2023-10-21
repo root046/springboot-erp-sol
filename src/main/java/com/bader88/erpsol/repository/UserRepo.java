@@ -2,6 +2,7 @@ package com.bader88.erpsol.repository;
 
 import com.bader88.erpsol.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -15,6 +16,4 @@ public interface UserRepo extends JpaRepository<UserEntity,Integer> {
     List<UserEntity> findAllByFirstNameContaining (String firstName);
     List<UserEntity> findAllByOrderByFirstNameDesc ();
     List<UserEntity> findAllByOrderByFirstNameAsc ();
-
-
 }
