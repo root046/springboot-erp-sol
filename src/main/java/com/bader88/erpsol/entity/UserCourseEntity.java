@@ -14,6 +14,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 public class UserCourseEntity {
+    @Transient
+    private String courseName;
+
+
+
     @Id
     @Column(name = "uc_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,6 +41,8 @@ public class UserCourseEntity {
     @JoinColumn(name = "course_id",insertable = false,updatable = false)
     private CourseEntity courseEntity;
 
-
+    public String getCourseName() {
+        return this.courseEntity.getCourseName();
+    }
 
 }
