@@ -48,4 +48,8 @@ public class UserEntity {
     @JsonManagedReference
     @OneToMany(mappedBy = "userEntity")
     private List<UserNoteEntity> userNotes;
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "userEntity")
+    private List<UserCourseEntity> userCourses;
 }
